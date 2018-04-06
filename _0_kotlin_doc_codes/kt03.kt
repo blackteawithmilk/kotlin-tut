@@ -1,7 +1,5 @@
 package demopackage
 
-// 可变类型和空值检查
-
 fun parseInt(str: String): Int? {
     return str.toIntOrNull()
 }
