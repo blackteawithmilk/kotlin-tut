@@ -1,7 +1,17 @@
-package demopackage
+# 基本语法
 
-// 可变类型和空值检查
+## 条件表达式
 
+``` kotlin
+fun printMaxOf(a: Int, b: Int): Unit {
+    println("max of $a and $b is ${
+        if (a > b) a else b}")
+}
+```
+
+## 可变类型和空值检查
+
+``` kotlin
 fun parseInt(str: String): Int? {
     return str.toIntOrNull()
 }
@@ -22,7 +32,4 @@ fun printProduct(arg1: String, arg2: String): Unit {
 
     println("${arg1} * ${arg2} = ${x * y}")
 }
-
-fun main(args: Array<String>) {
-    printProduct("a3", "7")
-}
+```
